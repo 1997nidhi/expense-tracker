@@ -73,6 +73,9 @@ function displayExpenses(month, year){
         ${expense.expense_name} - ${expense.amount} (${expense.expense_date}) ${expense.expense_description}
        <button class=delete onclick="deleteExpense(${expense.id})" style="float: inline-end;">X</button>
        `;
+    li.style.display = "flex";
+    li.style.justifyContent = "space-between";
+    li.style.alignItems = "center";
     li.style.textTransform = "uppercase";
     li.style.marginBottom = "10px";
     expense_list.appendChild(li);
