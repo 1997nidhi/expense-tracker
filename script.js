@@ -70,7 +70,7 @@ function displayExpenses(month, year){
     total+= expense.amount;
     const li = document.createElement("li");
     li.innerHTML = `
-        ${expense.expense_name} - ${expense.amount} (${expense.expense_date}) ______ ${expense.expense_description}
+        ${expense.expense_name} - ${expense.amount} (${expense.expense_date}) ${expense.expense_description}
        <button class=delete onclick="deleteExpense(${expense.id})" style="float: inline-end;">X</button>
        `;
     li.style.textTransform = "uppercase";
