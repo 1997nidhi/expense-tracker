@@ -1,0 +1,75 @@
+body{
+    background-color: AliceBlue;
+    background-image: url(
+    "https://img.freepik.com/premium-photo/personal-expenses-concept-financial-analysis-background-golden-coins-pile-icons_488220-960.jpg?w=996");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+header{
+    text-align: center;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+}
+.form{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+}
+.form-button,.form-input{
+    margin: 10px;
+    padding: 5px;
+    height: 30px;
+    border: 2px inset rgb(118, 118, 118);
+
+}
+/* button common for both the filter button and submit button */
+button{
+    cursor: pointer;
+    background-color: #86b8a3;
+}
+button:hover{
+    background-color: #3F696B;
+}
+h2{
+    text-align: center;
+    color: black;
+    border-bottom: groove black;
+}
+.filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap:10px;
+}
+.filter select, {
+  width: 90px;  /* Adjusts width */
+  padding: 2px;  /* Adds spacing inside the box */
+  font-size: 14px; /* Makes text readable */
+}
+.year-input{
+  width: 45px;  /* Adjusts width */
+  padding: 2px;  /* Adds spacing inside the box */
+  font-size: 14px; /* Makes text readable */
+}
+
+ul{
+    background-color: darkgrey;
+    padding:10px;
+    margin: 10px;
+}
+@media(max-width: 768px){
+form{
+width: 100%;
+}
+}
